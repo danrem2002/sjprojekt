@@ -1,22 +1,77 @@
 <?php
 include('database.php');
-function getBikes(){
-    $sql = 'SELECT * FROM bikes';
-    $result = $GLOBALS['mysqli']  -> query($sql);
-    foreach ($result as $bike) {
-        echo '
-        <div class="col-md-3">
-                <div class="product-item-1">
-                    <div class="product-thumb">
-                        <img src='.$bike['img'].' alt="Product Title">
-                    </div>
-                    <div class="product-content">
-                        <h5><a href="#">'.$bike['brand'].'</a></h5>
-                        <span class="tagline">'.$bike['model'].'</span>
-                        <span class="price">€'.$bike['price'].'</span>
-                        <p>Doloremque quo possimus quas necessitatibus blanditiis excepturi. Commodi, sunt asperiores tenetur deleniti labore!</p>
-                    </div> 
-                </div> 
-            </div> ';
+if (isset($_POST['edit_bike'])) {
+    $data = [
+        'id' => $_POST['id'],
+        'brand' => $_POST['brand'],
+        'price' => $_POST['price'],
+        'model' => $_POST['model'],
+        'count' => $_POST['count'],
+        'img'  => $_POST['img']
+    ];
+    $query = "UPDATE bikes SET brand = ?, model = ?, price = ?, count = ?, img = ? WHERE id = ?";
+    $query_run = $GLOBALS['mysqli']->prepare($query);
+    $query_run->bind_param('ssdisi', $data['brand'],
+                                     $data['model'],
+                                     $data['price'],
+                                     $data['count'],
+                                     $data['img'],
+                                     $data['id']);
+    $query_run->execute([$data['brand'],
+                        $data['model'],
+                        $data['price'],
+                        $data['count'],
+                        $data['img'],
+                        $data['id']]);
+    if ($query_run) {
+        header("LOCATION: ../admin.php");
+    } else {
+        echo "Message not sent";
+    }
+};
+if (isset($_POST['add_bike'])) {
+    $data = [
+        'brand' => $_POST['brand'],
+        'price' => $_POST['price'],
+        'model' => $_POST['model'],
+        'count' => $_POST['count'],
+        'img'  => $_POST['img']
+    ];
+    $query = "INSERT INTO bikes(brand, model, price, count,img) VALUES (?,?,?,?,?)";
+    $query_run = $GLOBALS['mysqli']->prepare($query);
+    $query_run->bind_param('ssdis', $data['brand'],
+                                     $data['model'],
+                                     $data['price'],
+                                     $data['count'],
+                                     $data['img']);
+    $query_run->execute([$data['brand'],
+                        $data['model'],
+                        $data['price'],
+                        $data['count'],
+                        $data['img']]);
+    if ($query_run) {
+        header("LOCATION: ../admin.php");
+    } else {
+        echo "Message not sent";
+    }
+};
+
+if (isset($_POST['remove_bike'])) {
+    $data = [
+        'id' => $_POST['id'],
+        'brand' => $_POST['brand'],
+        'price' => $_POST['price'],
+        'model' => $_POST['model'],
+        'count' => $_POST['count'],
+        'img'  => $_POST['img']
+    ];
+    $query = "DELETE FROM bikes WHERE id = ?";
+    $query_run = $GLOBALS['mysqli']->prepare($query);
+    $query_run->bind_param('i',  $data['id']);
+    $query_run->execute([$data['id']]);
+    if ($query_run) {
+        header("LOCATION: ../admin.php");
+    } else {
+        echo "Message not sent";
     }
 };

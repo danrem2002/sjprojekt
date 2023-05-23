@@ -8,8 +8,9 @@ $password = "";
 
 $mysqli = new mysqli(hostname: $host,
                      username: $username,
-                     database: $dbname,
-                     password: $password );
+                     password: $password,
+                     database: $dbname
+                      );
 
 
 if($mysqli->connect_errno){
