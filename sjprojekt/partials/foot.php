@@ -9,34 +9,34 @@
                         </div>
                         <div id="owl-demo" class="owl-carousel">
                             <div class="item"> 
-                            	<a href="#"><img src="images/tm-170x80-1.jpg" alt=""></a>
+                            	<a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
                           	</div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-2.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-1.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-2.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-1.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-2.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-1.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-2.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-1.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
                             </div>
                             <div class="item">
-                                <a href="#"><img src="images/tm-170x80-2.jpg" alt=""></a>
+                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
                             </div>
                         </div> <!-- /#owl-demo -->
                     </div> <!-- /.col-md-12 -->
@@ -48,11 +48,9 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="footer-widget">
-                            <h3 class="widget-title">About Us</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, debitis recusandae.
+                            <h3 class="widget-title">Useful Link(s)</h3>
                             <ul class="follow-us">
-                                <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                <li><a href="https://github.com/danrem2002/sjprojekt"><i class="fa fa-github"></i>GitHub Repository</a></li>
                             </ul> <!-- /.follow-us -->
                         </div> <!-- /.footer-widget -->
                     </div> <!-- /.col-md-3 -->
@@ -68,26 +66,12 @@
                         <div class="footer-widget">
                             <h3 class="widget-title">Useful Links</h3>
                             <ul>
-                                <li><a href="#">Our Shop</a></li>
-                                <li><a href="#">Partners</a></li>
-                                <li><a href="#">Gift Cards</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Help</a></li>
+                                <li><a href="./shop.php">Our Shop</a></li>
+                                <li><a href="./about-us.php">About Us</a></li>
                             </ul>
                         </div> <!-- /.footer-widget -->
                     </div> <!-- /.col-md-2 -->
-                    <div class="col-md-4">
-                        <div class="footer-widget">
-                            <h3 class="widget-title">Our Newsletter</h3>
-                            <div class="newsletter">
-                                <form action="#" method="get">
-                                    <p>Sign up for our regular updates to know when new products are released.</p>
-                                    <input type="text" title="Email" name="email" placeholder="Your Email Here">
-                                    <input type="submit" class="s-button" value="Submit" name="Submit">
-                                </form>
-                            </div> <!-- /.newsletter -->
-                        </div> <!-- /.footer-widget -->
-                    </div> <!-- /.col-md-4 -->
+                    
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /.main-footer -->
@@ -95,10 +79,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <span>Copyright &copy; 2084 <a href="#">Company Name</a></span>
+                        <span>Copyright &copy; 2023 <a href="#">Daniel Remiaš</a></span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, expedita soluta mollitia accusamus ut architecto maiores cum fugiat. Pariatur ipsum officiis fuga deleniti alias quia nostrum veritatis enim doloremque eligendi?</p>
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /.bottom-footer -->
     </footer> <!-- /.site-footer -->
+
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+    </body>
+</html>

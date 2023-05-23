@@ -31,7 +31,11 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
+    <?php 
+        include('./inc/crud.php');
+        
 
+    ?>
     
     <header class="site-header">
         <div class="top-header">
@@ -39,14 +43,14 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <div class="top-header-left">
-                            <a href="#">Sign Up</a>
-                            <a href="#">Log In</a>
+                            <a href="./reg.php">Sign Up</a>
+                            <a href="./login.php">Log In</a>
                         </div> <!-- /.top-header-left -->
                     </div> <!-- /.col-md-6 -->
                     <div class="col-md-6 col-sm-6">
                         <div class="social-icons">
                             <ul>
-                                <li><a href="#" class="fa fa-github"></a></li>
+                                <li><a href="https://github.com/danrem2002/sjprojekt" class="fa fa-github"></a></li>
                             </ul>
                             <div class="clearfix"></div>
                         </div> <!-- /.social-icons -->
@@ -68,7 +72,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
                                 <i class="fa fa-bars"></i>
                             </a>
                             <ul class="menu">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="./index.php">Home</a></li>
                                 <li><a href="#">Policies</a></li>
                                 
                             </ul>
@@ -83,9 +87,9 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
                     <div class="col-md-6 col-sm-7">
                         <div class="list-menu">
                             <ul>
-                                <li><a href="index.php">Shop</a></li>
-                                <li><a href="About-us.php">About us</a></li>
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="./shop.php">Shop</a></li>
+                                <li><a href="./About-us.php">About us</a></li>
+                                <li><a href="./contact.php">Contact</a></li>
                             </ul>
                         </div> <!-- /.list-menu -->
                     </div> <!-- /.col-md-6 -->
