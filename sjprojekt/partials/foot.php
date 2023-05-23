@@ -1,48 +1,5 @@
 <footer class="site-footer">
-        <div class="our-partner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="customNavigation">
-                            <a class="btn prev"><i class="fa fa-angle-left"></i></a>
-                            <a class="btn next"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                        <div id="owl-demo" class="owl-carousel">
-                            <div class="item"> 
-                            	<a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
-                          	</div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-1.jpg" alt=""></a>
-                            </div>
-                            <div class="item">
-                                <a href="#"><img src="./images/tm-170x80-2.jpg" alt=""></a>
-                            </div>
-                        </div> <!-- /#owl-demo -->
-                    </div> <!-- /.col-md-12 -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /.our-partner -->
+        
         <div class="main-footer">
             <div class="container">
                 <div class="row">

@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-title">
-                    <h2>New Products</h2>
+                    <h2>Welcome to the Bike Land !</h2>
                 </div> <!-- /.section -->
             </div> <!-- /.row -->
             <div class="row">

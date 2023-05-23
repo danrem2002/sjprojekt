@@ -75,7 +75,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
                             </a>
                             <ul class="menu">
                                 <li><a href="./index.php">Home</a></li>
-                                <li><a href="#">Policies</a></li>
+                                <?php if (isset($_SESSION["user_id"])) echo '<li><a href="./admin.php">Admin Page</a></li>' ?>
                                 
                             </ul>
                         </div> <!-- /.main-menu -->
@@ -92,7 +92,7 @@ http://www.templatemo.com/preview/templatemo_428_kool_store
                                 <li><a href="./shop.php">Shop</a></li>
                                 <li><a href="./About-us.php">About us</a></li>
                                 <li><a href="./contact.php">Contact</a></li>
-                                <?php if (isset($_SESSION["user_id"])) echo '<li><a href="./admin.php">Admin Page</a></li>' ?>
+                                
                                 
                             </ul>
                         </div> <!-- /.list-menu -->

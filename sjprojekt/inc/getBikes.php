@@ -8,7 +8,7 @@ function getBikes(){
         <div class="col-md-3">
                 <div class="product-item-1">
                     <div class="product-thumb">
-                        <img src='.$bike['img'].' alt="Product Title">
+                        <img class = "img-thumbnail" style = "height: 200px; object-fit: contain;" src='.$bike['img'].' alt="Product Title">
                     </div>
                     <div class="product-content">
                         <h5><a href="#">'.$bike['brand'].'</a></h5>
